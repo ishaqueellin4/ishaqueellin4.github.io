@@ -84,12 +84,13 @@
     }
 
     .profile img {
-      width: 100%;
-      height: 100%;
-      border: 4px solid #080c18;
-      border-radius: 50%;
-      object-fit: cover;
-    }
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #080c18;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
     @keyframes glow {
       from { box-shadow: 0 0 15px #38bdf866; }
@@ -281,7 +282,11 @@
   <main>
     <div class="hero" id="home">
       <div class="profile">
-        <img src="profile.jpg" alt="Ishaque Ellin">
+        <img
+  src="./profile.jpg"
+  alt="Ishaque Ellin"
+  onerror="this.style.display='none';"
+>
       </div>
 
       <div class="tag">WELCOME TO MY PERSONAL WEBSITE</div>
